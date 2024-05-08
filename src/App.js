@@ -1,4 +1,5 @@
 import { useState } from "react";
+import QuoteBox from "./components/QuoteBox";
 import "./App.scss";
 
 const quoteURL =
@@ -27,6 +28,7 @@ function App() {
         <p>"{quote}"</p>
         <p>- {author}</p>
         <button onClick={changeQuoteAndAuthor}>Change Quote</button>
+        <QuoteBox />
       </header>
     </div>
   );

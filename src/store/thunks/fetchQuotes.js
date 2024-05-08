@@ -1,9 +1,10 @@
-import { crtateAsyncThunk } from "@reduxjs/toolkit";
-import { apiService } from "../../App/apiService";
+import { createAsyncThunk } from "@reduxjs/toolkit";
+import { apiService } from "../../app/apiService";
 
-const fetchQuotes = crtateAsyncThunk("quotes/fetch", async () => {
+const fetchQuotes = createAsyncThunk("quotes/fetch", async () => {
   const response = await apiService.get();
-  return response;
+
+  return response.data;
 });
 
 export { fetchQuotes };
