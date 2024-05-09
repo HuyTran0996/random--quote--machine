@@ -1,0 +1,59 @@
+#quote-box {
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 32rem;
+  font-size: 2rem;
+  padding: 3rem;
+  border-radius: 3px;
+
+  .quote-text {
+    .quote {
+      font-size: 2rem;
+    }
+    .quote-mark {
+      font-size: 2rem;
+      margin-right: 0.5rem;
+    }
+  }
+
+  .quote-author {
+    text-align: end;
+    margin-bottom: 1.5rem;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    a {
+      font-size: 3rem;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        color: black;
+      }
+    }
+    button {
+      background-color: rgb(251, 105, 100);
+      color: #fff;
+      height: 38px;
+      border: none;
+      border-radius: 3px;
+      font-size: 0.85rem;
+      border: none;
+      padding: 8px 18px 6px 18px;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: aqua;
+        color: black;
+      }
+    }
+  }
+}

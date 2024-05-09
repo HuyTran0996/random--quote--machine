@@ -23,11 +23,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Random Number: {randomNumber}</h1>
-        <button onClick={generateNumber}>Genarate randomNumber</button>
-        <p>"{quote}"</p>
-        <p>- {author}</p>
-        <button onClick={changeQuoteAndAuthor}>Change Quote</button>
         <QuoteBox />
       </header>
     </div>
